@@ -15,7 +15,7 @@ value_currencies_table = Table(
     'value_currencies', metadata,
     Column('code', TEXT, ForeignKey('currency_codes.code'), nullable=False),
     Column('value', INTEGER, nullable=False),
-    Column('data', TEXT, nullable=False)
+    Column('date', TEXT, nullable=False)
 )
 
 if not DB_PATH.exists() or DB_PATH.stat().st_size == 0:

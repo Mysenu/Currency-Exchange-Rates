@@ -1,4 +1,4 @@
 import os
 
 
-CURRENCY_API = os.environ.get('CURRENCY_API')
+CURRENCY_API_TOKEN = os.environ.get('CURRENCY_API_TOKEN')
