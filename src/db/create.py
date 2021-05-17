@@ -2,7 +2,6 @@ from sqlalchemy import MetaData, Table, Column, INTEGER, TEXT, ForeignKey
 
 from .configs import engine, DB_PATH
 
-
 metadata = MetaData(engine)
 
 currency_table = Table(
@@ -13,7 +12,7 @@ currency_table = Table(
 
 rate_table = Table(
     'rate', metadata,
-    Column('code', TEXT, ForeignKey('currency_codes.code'), nullable=False),
+    Column('code', TEXT, ForeignKey('currency.code'), nullable=False),
     Column('value', INTEGER, nullable=False),
     Column('date', TEXT, nullable=False)
 )

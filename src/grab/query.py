@@ -4,7 +4,7 @@ import json
 import requests
 
 from .configs import CURRENCY_API_TOKEN
-from ..db.query import dateExists, insertValueCurrency, insertCurrencyCode
+from ..db import dateExists, insertValueCurrency, insertCurrencyCode
 
 
 def getValueCurrenciesOnDate(date: datetime):
